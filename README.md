@@ -8,25 +8,26 @@ Events occur as follows:
 
 **WorkOrderService**
 
-   *workorder.requested*
+   ->*workorder.requested*
    
 **BudgetValidation**
 
-   *workorder.validated*
+   ->*workorder.validated*
    
 **MatchingService**
 
-   *worker.matched*
+   ->*worker.matched*
    
 **WorkerConfirmation**
 
-   *match.confirmed*
+   ->*match.confirmed*
    
 **PaymentService**
 
-   *payment.authorized*
+   ->*payment.authorized*
    
 **Finalization**
 
-   *workorder.confirmed*
+   ->*workorder.confirmed*
+
 
