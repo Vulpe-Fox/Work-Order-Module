@@ -1,0 +1,50 @@
+{
+  "name": "workorders",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "homepage": "https://github.com/Vulpe-Fox/Work-Order#readme",
+  "bugs": {
+    "url": "https://github.com/Vulpe-Fox/Work-Order/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Vulpe-Fox/Work-Order.git"
+  },
+  "license": "MIT",
+  "author": "Vulpe-Fox",
+  "type": "module",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+
+    "start:workorder": "node dist/services/workOrderService.js",
+    "start:budget": "node dist/services/budgetValidationService.js",
+    "start:matching": "node dist/services/matchingService.js",
+    "start:confirmation": "node dist/services/workerConfirmationService.js",
+    "start:payment": "node dist/services/paymentService.js",
+    "start:finalization": "node dist/services/finalizationService.js",
+
+    "dev:workorder": "tsx src/services/workOrderService.ts",
+    "dev:budget": "tsx src/services/budgetValidationService.ts",
+    "dev:matching": "tsx src/services/matchingService.ts",
+    "dev:confirmation": "tsx src/services/workerConfirmationService.ts",
+    "dev:payment": "tsx src/services/paymentService.ts",
+    "dev:finalization": "tsx src/services/finalizationService.ts",
+
+    "lint": "eslint . --ext .ts",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "@types/node": "^25.0.3",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "eslint": "^9.39.2",
+    "kafkajs": "^2.2.4",
+    "tsx": "^4.21.0",
+    "uuid": "^13.0.0"
+  }
+}
