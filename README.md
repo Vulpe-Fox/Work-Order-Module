@@ -10,7 +10,7 @@ Events occur as follows:
 
    ->*workorder.requested*
    
-**BudgetValidation**
+**BudgetValidationService**
 
    ->*workorder.validated*
    
@@ -18,7 +18,7 @@ Events occur as follows:
 
    ->*worker.matched*
    
-**WorkerConfirmation**
+**WorkerConfirmationService**
 
    ->*match.confirmed*
    
@@ -26,8 +26,9 @@ Events occur as follows:
 
    ->*payment.authorized*
    
-**Finalization**
+**FinalizationService**
 
    ->*workorder.confirmed*
+
 
 
